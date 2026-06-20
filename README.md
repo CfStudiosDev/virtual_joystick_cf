@@ -1,7 +1,7 @@
 <h1 align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/virtual_joystick_logo_dark.png">
-    <img alt="Virtual Joystick Logo" src="assets/virtual_joystick_logo_light.png">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/virtual_joystick_cf_logo_dark.png">
+    <img alt="Virtual Joystick Logo" src="assets/virtual_joystick_cf_logo_light.png">
   </picture>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/cf_studios_logo_dark.png">
@@ -15,7 +15,7 @@ A professional, high-performance, and ready-to-use Virtual Joystick. Specificall
 
 ## 🌎 Language
 
-- English
+- **English**
 - [Português](README.pt.md)
 
 ## 📋 Table of Contents
@@ -50,22 +50,22 @@ A professional, high-performance, and ready-to-use Virtual Joystick. Specificall
 
 1. Move the `addons/` folder into your project's `res://` directory.
 2. Go to **Project -> Project Settings -> Plugins**.
-3. Find **Virtual Joystick** and set the status to **Enabled**.
+3. Find **Virtual Joystick CF** and set the status to **Enabled**.
 
 ## 🛠️ How to Use
 
-To ensure all visual components and internal nodes work correctly, you must instance the **Virtual Joystick Scene**:
+To ensure all visual components and internal nodes work correctly, you must instance the **Virtual Joystick CF Scene**:
 
 ### Option 1: Scene Instancing (Recommended)
 1. Open the scene where you want to add the control (e.g., your HUD or UI);
 2. Click **Instantiate Child Scene** or use the shortcut *Ctrl+Shift+A*;
-3. Select the `virtual_joystick.tscn` scene.
+3. Select the `virtual_joystick_cf.tscn` scene.
 > **⚠️ Note:** Remember to check the **Addons** checkbox in the bottom right corner of the window to include files from the `addons/` folder.
 
 ### Option 2: File System Drag & Drop
 1. Open the target scene (e.g., HUD or UI);
-2. In the **File System**, navigate to `addons/virtual_joystick/`;
-3. Drag the `virtual_joystick.tscn` file into your **Scene Tree**.
+2. In the **File System**, navigate to `addons/virtual_joystick_cf/`;
+3. Drag the `virtual_joystick_cf.tscn` file into your **Scene Tree**.
 
 ## ⚙️ Configuration
 
@@ -96,17 +96,17 @@ func _physics_process(_delta: float) -> void:
 Signals are available for custom events, such as `pressed`, `released`, and `direction_changed` for direct access to `input_direction`:
 ```gdscript
 func _on_joystick_direction_changed(input_direction: Vector2) -> void:
-    print("Virtual Joystick input_direction: ", input_direction)
+    print("Virtual Joystick CF input_direction: ", input_direction)
 ```
 
 ## 📂 Project Structure
-- `res://addons/virtual_joystick/`: Plugin root with main scene, scripts, and icon;
-- `res://addons/virtual_joystick/direction_utils`: Core mathematical utility for 2D direction handling and vector snapping;
-- `res://addons/virtual_joystick/example`: Example game demonstrating the virtual joystick in action;
-- `res://addons/virtual_joystick/textures`: Default textures for the base and stick;
-- `res://addons/virtual_joystick/docs`: Detailed documentation for:
-  - [Virtual Joystick](addons/virtual_joystick/docs/VIRTUAL_JOYSTICK.md);
-  - [Direction Utils](addons/virtual_joystick/docs/DIRECTION_UTILS.md).
+- `res://addons/virtual_joystick_cf/`: Plugin root with main scene, scripts, and icon;
+- `res://addons/virtual_joystick_cf/direction_utils`: Core mathematical utility for 2D direction handling and vector snapping;
+- `res://addons/virtual_joystick_cf/example`: Example game demonstrating the Virtual Joystick CF in action;
+- `res://addons/virtual_joystick_cf/textures`: Default textures for the base and stick of the Virtual Joystick CF;
+- `res://addons/virtual_joystick_cf/docs`: Detailed documentation for:
+  - [Virtual Joystick CF](addons/virtual_joystick_cf/docs/VIRTUAL_JOYSTICK_CF.md);
+  - [Direction Utils](addons/virtual_joystick_cf/docs/DIRECTION_UTILS.md).
 
 ## ☕ Support the Project
 

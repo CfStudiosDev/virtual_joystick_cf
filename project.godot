@@ -18,11 +18,7 @@ config/name="Virtual Joystick by CF Studios"
 config/tags=PackedStringArray("cf_studios", "plugin")
 run/main_scene="uid://mt0anxmbxo5i"
 config/features=PackedStringArray("4.7", "GL Compatibility")
-boot_splash/bg_color=Color(0.007843138, 0.105882354, 0.19607843, 1)
-boot_splash/stretch_mode=2
-boot_splash/image="uid://bpb86qy37rjb"
 config/icon="uid://oj528vsbskbf"
-boot_splash/minimum_display_time=2000
 
 [display]
 
@@ -34,15 +30,7 @@ window/handheld/orientation=4
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/virtual_joystick/plugin.cfg")
-
-[input]
-
-click={
-"deadzone": 0.2,
-"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":1,"canceled":false,"pressed":false,"double_click":false,"script":null)
-]
-}
+enabled=PackedStringArray("res://addons/virtual_joystick_cf/plugin.cfg")
 
 [input_devices]
 

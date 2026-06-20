@@ -1,7 +1,7 @@
 <h1 align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/virtual_joystick_logo_dark.png">
-    <img alt="Virtual Joystick Logo" src="assets/virtual_joystick_logo_light.png">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/virtual_joystick_cf_logo_dark.png">
+    <img alt="Virtual Joystick Logo" src="assets/virtual_joystick_cf_logo_light.png">
   </picture>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/cf_studios_logo_dark.png">
@@ -16,7 +16,7 @@ Um Joystick Virtual profissional, de alta performance e pronta para uso. Projeta
 ## 🌎 Linguagem
 
 - [English](README.md)
-- Português
+- **Português**
 
 ## 📋 Sumário
 
@@ -50,7 +50,7 @@ Um Joystick Virtual profissional, de alta performance e pronta para uso. Projeta
 
 1. Mova a pasta `addons/` para dentro do diretório `res://` do seu projeto.
 2. Vá para **Projeto -> Configurações do Projeto -> Plugins**.
-3. Localize o **Virtual Joystick** e altere o status para **Ativado**.
+3. Localize o **Virtual Joystick CF** e altere o status para **Ativado**.
 
 ## 🛠️ Modo de Usar
 
@@ -59,13 +59,13 @@ Para garantir que todos os componentes visuais e nós internos funcionem correta
 ### Opção 1: Instância da Cena (Recomendado)
 1. Abra a cena onde deseja adicionar o controle (ex: seu HUD ou UI);
 2. Clique em **Instantiate Child Scene** ou use suas teclas de atalho *Ctrl+Shift+A*;
-3. E escolha a cena `virtual_joystick.tscn`.
+3. E escolha a cena `virtual_joystick_cf.tscn`.
 > **⚠️ Nota:** Lembre de marcar o checkbox **Addons** localizado no canto inferior direito da janela, para incluir os arquivos do `addons/`.
 
 ### Opção 2: Cena do Sistema de Arquivos
 1. Abra a cena onde deseja adicionar o controle (ex: seu HUD ou UI);
-2. No **Sistema de Arquivos**, vá para `addons/virtual_joystick/`;
-3. Arraste o arquivo `virtual_joystick.tscn` para dentro da sua **Árvore de Cenas**.
+2. No **Sistema de Arquivos**, vá para `addons/virtual_joystick_cf/`;
+3. Arraste o arquivo `virtual_joystick_cf.tscn` para dentro da sua **Árvore de Cenas**.
 
 ## ⚙️ Configurações
 
@@ -96,18 +96,18 @@ func _physics_process(_delta: float) -> void:
 Disponíveis sinais para melhor acesso aos eventos, como `pressed`, `released` e `direction_changed` para acesso direto ao `input_direction`:
 ```gdscript
 func _on_joystick_direction_changed(input_direction: Vector2) -> void:
-    print("Virtual Joystick input_direction: ", input_direction)
+    print("Virtual Joystick CF input_direction: ", input_direction)
 ```
 
 ## 📂 Estrutura do Projeto
 
-- `res://addons/virtual_joystick/`: Raiz do plugin com cena principal, scripts e ícone;
-- `res://addons/virtual_joystick/direction_utils`: Utilitário matemático central para manipulação de direções 2D e ajuste de vetores;
-- `res://addons/virtual_joystick/example`: Jogo de exemplo para demonstração do joystick virtual em uso;
-- `res://addons/virtual_joystick/textures`: Texturas padrão para a base e alavanca do joystick virtual;
-- `res://addons/virtual_joystick/docs`: Documentações detalhadas para:
-  - [Virtual Joystick](addons/virtual_joystick/docs/VIRTUAL_JOYSTICK.pt.md);
-  - [Direction Utils](addons/virtual_joystick/docs/DIRECTION_UTILS.pt.md).
+- `res://addons/virtual_joystick_cf/`: Raiz do plugin com cena principal, scripts e ícone;
+- `res://addons/virtual_joystick_cf/direction_utils`: Utilitário matemático central para manipulação de direções 2D e ajuste de vetores;
+- `res://addons/virtual_joystick_cf/example`: Jogo de exemplo para demonstração do Joystick Virtual CF em uso;
+- `res://addons/virtual_joystick_cf/textures`: Texturas padrão para a base e alavanca do Joystick Virtual CF;
+- `res://addons/virtual_joystick_cf/docs`: Documentações detalhadas para:
+  - [Virtual Joystick CF](addons/virtual_joystick_cf/docs/VIRTUAL_JOYSTICK_CF.pt.md);
+  - [Direction Utils](addons/virtual_joystick_cf/docs/DIRECTION_UTILS.pt.md).
 
 ## ☕ Apoie o Projeto
 
